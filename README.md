@@ -1,157 +1,135 @@
-# ATS_Project
-ATS Resume Scoring System is a Python-based web application that evaluates resumes against job descriptions using NLP and semantic similarity techniques. It generates an ATS score, identifies matched and missing skills, provides improvement suggestions, and allows users to download a detailed ATS report.
-📄 ATS Resume Scoring System
+ 📊 Professional ATS Resume Scoring System
 
-An ATS (Applicant Tracking System) Resume Scoring System built using Python and Natural Language Processing (NLP).
-This project analyzes resume PDFs and compares them with job descriptions to generate an ATS compatibility score, identify matched and missing skills, and provide resume improvement suggestions through a user-friendly web interface.
+The **Professional ATS Resume Scoring System** is an AI-powered web application that evaluates resumes against job descriptions using **Natural Language Processing (NLP)** and **semantic similarity analysis**.  
+It helps job seekers understand how well their resumes align with Applicant Tracking Systems (ATS) and provides actionable insights to improve resume quality.
 
-🚀 Project Overview
-Modern companies use ATS software to filter resumes before human review.
-This project simulates how an ATS works by:
+---
 
-Extracting text from resume PDFs
+## 🚀 Key Features
 
-Cleaning and preprocessing text using NLP
+- Mandatory **Job Role & Job Description validation**
+- Upload and analyze **multiple resume PDFs**
+- **Overall ATS Match Score** calculation
+- **Section-wise resume evaluation**
+- **Semantic similarity scoring** using transformer models
+- **Skill gap detection** based on job requirements
+- **Detailed improvement suggestions**
+- **Resume ranking system** for multiple uploads
+- **Teal-themed visual score breakdown charts**
+- **Professional, multi-section PDF report generation**
+- Clean and responsive **Streamlit UI**
 
-Comparing resumes with job descriptions using semantic similarity
+---
 
-Generating an ATS score (0–100)
+## 🧠 Advanced Enhancements Added
 
-Providing skill gap analysis and improvement tips
+- Intelligent **skill gap & improvement recommendation engine**
+- Automatic **resume ranking leaderboard**
+- **Color-coded score interpretation**
+- **Compact horizontal bar charts** for better readability
+- Enhanced **PDF report design** with charts and workflow diagram
+- Strict input validation to prevent incomplete analysis
+- Scalable architecture for future ATS integrations
 
-The application is built using Streamlit, making it easy to use through a web browser.
+---
 
-🛠️ Technologies Used
+## 🛠️ Technology Stack
 
-Python 3.9 – 3.11 – Core programming language
+- **Python 3.10+**
+- **Streamlit** – Interactive web interface
+- **spaCy** – NLP preprocessing
+- **Sentence Transformers** – Semantic similarity computation
+- **PyTorch** – Model backend
+- **NLTK** – Text cleaning & stopword removal
+- **PyPDF2** – Resume PDF text extraction
+- **Matplotlib** – Teal-themed data visualizations
+- **ReportLab** – Professional PDF report generation
 
-Streamlit – Web application framework
+---
 
-spaCy – NLP processing and tokenization
+## 🔄 System Workflow
 
-NLTK – Stopword removal and text preprocessing
+1. Select the job role  
+2. Paste the job description  
+3. Upload one or more resume PDFs  
+4. Extract text from resumes  
+5. Perform NLP preprocessing  
+6. Compute semantic similarity scores  
+7. Analyze resumes section-wise  
+8. Identify skill gaps & improvement areas  
+9. Rank resumes based on ATS score  
+10. Generate and download a professional PDF report  
 
-Sentence Transformers – Semantic text embeddings
+---
 
-Cosine Similarity – Resume–JD matching
+## ⚙️ Installation Guide
 
-PyPDF2 – Resume PDF text extraction
-
-✨ Key Features
-
-📤 Upload one or multiple resume PDFs
-
-📝 Paste job description
-
-📊 ATS score calculation (0–100)
-
-🧠 Semantic similarity-based matching
-
-🛠️ Skill matching & missing skills detection
-
-📑 Section-wise resume analysis
-
-💡 Resume improvement suggestions
-
-📥 Downloadable ATS analysis report
-
-🎨 Clean and intuitive Streamlit UI
-
-📂 Project Structure
-Resume_Scoring_System/
-│
-├── app.py / Resume_Scoring_System.py
-├── requirements.txt
-├── README.md
-└── assets/
-    └── process_flow_diagram.png
-
-⚙️ Installation & Setup
-Step 1: Clone the Repository
-git clone https://github.com/your-username/ATS-Resume-Scoring-System.git
-cd ATS-Resume-Scoring-System
-
-Step 2: Install Required Libraries
-pip install streamlit spacy nltk sentence-transformers PyPDF2
-
-Step 3: Download spaCy English Model
+```bash
+pip install streamlit spacy nltk torch sentence-transformers PyPDF2 reportlab matplotlib
 python -m spacy download en_core_web_sm
 
-Step 4: Run the Application
+▶️ Run the Application
 streamlit run app.py
 
-Step 5: Open in Browser
 
-The app will open automatically at:
+Access the app at:
 
 http://localhost:8501
 
-🧪 How to Use
+📄 Output Generated
 
-Select the job role
+Overall ATS match percentage
 
-Upload resume PDF(s)
+Technical & soft skill analysis
 
-Paste the job description
+Skill gap identification
 
-Click Analyze Resumes
+Improvement recommendations
 
-View:
+Resume ranking table
 
-ATS score
+Teal-themed visual score charts
 
-Matched & missing skills
-
-Section-wise analysis
-
-Resume improvement suggestions
-
-Download the ATS report
-
-📊 Process Flow Diagram
-
-🎯 Use Cases
-
-Resume screening simulation
-
-Resume optimization for ATS
-
-College mini / final year project
-
-Learning NLP & semantic similarity
-
-Portfolio and interview demonstration
+Downloadable professional PDF report
 
 ✅ Advantages
 
-Automates resume screening
+Improves resume ATS compatibility
 
-Saves recruiter time
+Supports multiple resumes at once
 
-Helps candidates improve resumes
+Provides actionable career guidance
 
-Beginner-friendly NLP project
+User-friendly and visually appealing UI
 
-Cost-effective and lightweight
+Suitable for academic and professional use
+
+⚠️ Limitations
+
+Accuracy depends on resume text clarity
+
+English-language resumes only
+
+ATS logic is simulated (not company-specific)
 
 🔮 Future Enhancements
 
-Online job portal integration
+Multilingual resume support
 
-Advanced skill database
+Real ATS API integration
 
-Machine learning-based ranking
+Advanced ML-based skill inference
 
-Cloud deployment (Streamlit Cloud / AWS)
+Cloud deployment with user accounts
 
-AI-powered resume rewriting
+Recruiter dashboard & analytics
 
 📌 Conclusion
 
-This ATS Resume Scoring System demonstrates how NLP and semantic similarity can be used to automate resume screening.
-It is suitable for students, job seekers, and recruiters who want to understand ATS-based resume evaluation.
+The Professional ATS Resume Scoring System demonstrates the practical use of AI and NLP in modern recruitment.
+It serves as a powerful tool for job seekers to optimize resumes, understand ATS behavior, and improve hiring success.
 
-🧑‍💻 Author
+👩‍💻 Author
 
 Bhargavi
-📌 College Project | NLP | Python | Streamlit
+Professional ATS Resume Scoring System
