@@ -2,6 +2,19 @@
 
 The **Professional ATS Resume Scoring System** is an AI-powered **multipage web application** with a beautiful **teal blue theme** that evaluates resumes against job descriptions using advanced analysis techniques. It helps job seekers understand how well their resumes align with Applicant Tracking Systems (ATS) and provides actionable insights to improve resume quality.
 
+## 🚀 Quick Start - எப்படி பார்ப்பது? (How to See?)
+
+**Want to see the finished project?** Check these guides:
+
+- **📖 [HOW_TO_RUN.md](HOW_TO_RUN.md)** - Complete step-by-step guide in English + Tamil (Tanglish)
+- **🎯 [QUICK_START_TAMIL.md](QUICK_START_TAMIL.md)** - விரைவான வழிகாட்டி (Quick visual guide with Tamil)
+
+**One Command to Start:**
+```bash
+streamlit run app.py
+```
+Then open: **http://localhost:8501** 🌐
+
 ---
 
 ## 🎨 Design Features
